@@ -33,7 +33,7 @@ body {
 	}
 	.cus_height_search{
 		margin: 7px auto;
-		margin-left: -5px;
+		margin-left: -6px;
 	}
 	
 .nav-top-bg{
@@ -675,6 +675,11 @@ textarea {
 	background-color: #44ce6f;
 	border:#44ce6f;
 }
+.post-btn:hover{
+	background-color: white;
+	border:1px solid #44ce6f;
+	color: #44ce6f;
+}
 .ask-qu-modal{
 	width: 400px;
 	height: 430px;
@@ -792,6 +797,14 @@ textarea {
 	border-radius: 50%;
 	padding-top:2px ;
 	padding-bottom:2px ;
+}
+.main-img{
+    width: 33px !important;
+    height: 35px !important;
+	border-radius: 50%;
+	padding-top:2px ;
+	padding-bottom:2px ;
+	margin-top: -6px;
 }
 .main-cmt-profile{
     width: 100px !important;
@@ -1098,7 +1111,7 @@ textarea {
   .openbtn:hover {
 	background-color:#44ce6f;
 	color:#f2f2f2;
-	border: 1px solid  #44ce6f;;
+	border: 1px solid  #44ce6f;
   }
 
   .permission{
@@ -1110,6 +1123,11 @@ textarea {
   color: gray;
   font-family: fantasy;
   font-size: 14px;
+ }
+ .profileIcon{
+	 font-size: 10px;
+	 font-family: fantasy;
+	 color:#44ce6f; ;
  }
  
   
