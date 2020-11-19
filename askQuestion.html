@@ -39,23 +39,46 @@
                         <span class="icon-bar">
                         </span>
                     </button>
-                    <a class="navbar-brand header-logo" href="home.html"><img src="img/logo.png" class="img-responsive"
+                    <a class="navbar-brand header-logo" href="index.html"><img src="img/logo.png" class="img-responsive"
                             alt="Logo" /></a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="profile.html"><img src="img/profile.jpg" class="main-img">
-                                <span class="profileIcon">Efrana</span></a>
-						</li>
+                            <p class="profileIcon">Efrana Jannat</p>
+                        </li>
                         <li>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                        class="fa fa-angle-down angleIcon"></i></a>
+                                <ul class="dropdown-menu menudesign">
+                                    <li>
+                                        <div>
+                                            <img src="img/profile.jpg" class="main-img">
+                                            <a class="profileIcon2">Efrana Jannat</a>
+                                        </div>
+                                    </li>
+                                    <hr />
+                                    <li>
+                                        <a href="#" class="mainMenu">
+                                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                            <span class="logout">Logout</span></a></li>
+                                    <li>
+
+                                        <a href="profile.html">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <span class="logout">My Account</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/profile.jpg" class="main-img">
+                            </a>
+                        </li>
+                        <!-- <li>
                             <a href="#" data-toggle="modal" data-target="#mymodal">Login</a>
-                        </li>
-                        
-                        <li>
-                            <a href="questionList.html" class="btn  btn-sm btn-user">Admin</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <form class="form-inline">
                         <div class="form-group has-feedback has-search cus_height_search">
@@ -73,13 +96,10 @@
 
         <div class="modal-dialog modal_width" role="document">
             <div class="modal-content ask-qu-modal">
-                <!-- <div class="modal-header bottom-color"> -->
                 <div class="modal-head">
-                    <i class="fa fa-window-close window_close_icon" aria-hidden="true"></i>
+                   <a href="#"> <i class="fa fa-window-close window_close_icon"  class="close" data-dismiss="modal" aria-hidden="true"></i></a>
                     <h2> <strong>Asking a good question</strong></h2>
-
                 </div>
-
                 <p class="modal_p3">
                     You’re ready to ask your first programming-related question and the community is
                     here to help! To get you the best answers, we’ve provided some guidance:
@@ -88,9 +108,7 @@
                     Before you post, <span class="modal-middele">search the site </span>to make sure your question
                     hasn’t been answered.
                 </p>
-
                 <!-- </div> -->
-
                 <p class="bottom-design"><span class="span_num">1.</span> Summarize the problem</p>
                 <p class="bottom-design"><span class="span_num">2.</span> Describe what you’ve tried</p>
                 <p class="bottom-design"><span class="span_num">3.</span> When appropriate, show some code</p>
@@ -121,8 +139,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Body</label>
-                                <textarea id="summernote" id="textInput" class=" textInput form-control text_area" name="editordata"
-                                    placeholder="Body"></textarea>
+                                <textarea id="summernote" id="textInput" class=" textInput form-control text_area"
+                                    name="editordata" placeholder="Body"></textarea>
                                 <small id="emailHelp" class="form-text text-muted">
                                     Be specific and imagine you’re asking a question to another person.</small>
                             </div>
@@ -130,8 +148,8 @@
                                 <label for="exampleInputPassword1">Tags</label>
                                 <br />
 
-                                <textarea class=" textInput form-control text_area" id="textInput" name="editordata" placeholder="Tags"
-                                    data-role="tagsinput"></textarea>
+                                <textarea class=" textInput form-control text_area" id="textInput" name="editordata"
+                                    placeholder="Tags" data-role="tagsinput"></textarea>
                                 <small id="emailHelp" class="form-text text-muted">
                                     Add up to 5 tags to describe what your question is about.</small>
                             </div>
@@ -238,6 +256,11 @@
         $('#summernote').summernote({
             placeholder: 'Write Your Question',
             height: 170
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#mymodal").modal('show');
         });
     </script>
 </body>
