@@ -23,7 +23,11 @@
 
 <body>
     <nav class="navbar navbar-default  nav-top-bg" role="navigation">
+        
+           
+        
         <div class="container">
+            
             <div class="row">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -38,21 +42,37 @@
                         <span class="icon-bar">
                         </span>
                     </button>
+                    
                     <a class="navbar-brand header-logo" href="index.html"><img src="img/logo.png" class="img-responsive"
                             alt="Logo" /></a>
 
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
+                        <!-- <li>
                             <a href="#">AskQuestion</a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="#">Login</a>
+                            <a href="#" data-toggle="modal" data-target="#mymodal">Login</a>
                         </li>
                         <li>
                             <a href="#" class="btn  btn-sm btn-user">Sign Up</a>
                         </li>
+                        <li>
+                           
+                            <div class="dropdown">
+                                <!-- <a><i class="fa fa-align-justify " title="Align Justify"></i></a> -->
+                                <!-- <button class="dropbtn"> -->
+                                    <i class="fa fa-align-justify dropbtn" title="Align Justify"></i>
+                                <!-- </button> -->
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                        </li>
+                        
                     </ul>
                     <form class="form-inline">
                         <div class="form-group has-feedback has-search cus_height_search">
@@ -60,11 +80,47 @@
                             <input type="text" class="form-control custom_width" placeholder="Search">
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
+        <!-- <i class="fa fa-align-justify" title="Align Justify"></i> -->
         <!-- /.container-fluid -->
     </nav>
+
+    	<!-- modal Start -->
+	<div class="modal" tabindex="-1" role="dialog" id="mymodal">
+		<div class="modal-dialog modal_width" role="document">
+			<div class="modal-content" style="border-radius: 0px;">
+				<a href="#"><i class="fa fa-window-close window_close_icon"  class="close" data-dismiss="modal" aria-hidden="true"></i></a>
+				<div class="modal-header boder-bottom-color">
+					<p class="modal_p">Login To Our Site</p>
+					<P class="modal_sugg">Enter your username and password to log on :</P>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					</button>
+				</div>
+				<div class="modal-body modal-body-design2">
+					<form>
+						<div class="form-group">
+							<input type="email" class="form-control fontcontrol" id="text"
+								aria-describedby="emailHelp" placeholder="Email..">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control fontcontrol" id="text"
+								placeholder="Password..">
+						</div>
+						<p class="modal_p2">forget password?</p>
+						<button type="submit" class="btn btn-primary btn_secoend"  style="border-radius: 2px;">Sign in!</button>
+					</form>
+				</div>
+				<div class="modal-footer boder-bottom-color">
+					<p class="modal_sugg2">Don't Have an Account?<a href="#" class="signup"><strong> Sign
+								up</strong></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal End -->
 
     <div class="container mt-4">
         <div class="row">
