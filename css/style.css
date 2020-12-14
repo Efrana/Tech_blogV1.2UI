@@ -1167,6 +1167,8 @@ textarea {
   font-family: fantasy;
   font-size: 14px;
  }
+
+ 
  .profileIcon{
 	 font-size: 13px;
 	 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -1339,7 +1341,41 @@ textarea {
 }.btn_widh{
 	width: 321px;
 }
-  
+/* card  */
+.label-default_new {
+    background-color: #f4f4f478;
+    color: #000;
+    display: inline-block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    margin: 1px;
+    font-weight: 300;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 2px !important;
+    border: 1px solid #cccccc91;
+}
+.custom_bg2{  
+    font-size: 11px;
+    font-weight: 300;
+    background: #f4f4f478;
+    padding: 30px 65px;
+    text-transform: uppercase;
+    border-radius: 2px !important;
+    color: #000;
+    margin: 4px 16px 4px 0;
+	box-shadow: 0px 0px 0px #bdbdbd;
+}
+.askqst_post_wrap_card{
+	/* background-color:#fff; */
+	padding:3px 27px 19px 5px; 
+	overflow: hidden;
+	border-bottom: 1px solid #E8E8E8;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+
 
 
 /*=========================================details page css end ============================================= */
